@@ -4,7 +4,18 @@ function InputOutput() {
   const [input1, setInput1] = useState("");
   const [input2, setInput2] = useState("");
   const [input3, setInput3] = useState("");
+  
+  const base= useBase()
+  const table= base.getTable ("Books") // books table
+  const records = useRecords(table) // all records
 
+function addNewBook(name, value, status){
+  table.createRecordAsync({
+    "Name": name,
+    "Value": value,
+    "Status": status
+  })
+}
   return(
     <div>
       <div className="title">
@@ -53,6 +64,10 @@ function InputOutput() {
         <div>{input3}</div>
       </div>
     </div>
+
+   <button onClick={() => addNewBook(input1,input2,input3)}>
+        Submit
+      </button>
   );
 }
 
