@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Input, useBase, useRecords} from '@airtable/blocks/ui'
 
 function InputOutput() {
   const [input1, setInput1] = useState("");
@@ -15,6 +16,25 @@ function addNewBook(name, value, status){
     "Value": value,
     "Status": status
   })
+}
+ function Cell() {
+records[0]. getCellValue ("Status") //status of first record
+
+
+const records2 = useRecords (
+  table,
+  { fields: ["Name","Status" ] }
+) // all records but only name and status
+
+table. createRecordAsync({
+  "Name": "X",
+  "Value": "3",
+  "Status" : "in transit"
+});
+
+table.updateRecordAsync(records[0],
+{ "Status" : "Redacted"} 
+)
 }
   return(
     <div>
