@@ -11,19 +11,16 @@ function App(){
    
  return (
     <div>
-      <NavLink to="/login">Sign Out</NavLink>
       <Routes>
-          <Route exact path="/" element={<MainPage/>}/>
+          <Route exact path ="/" element={<LoginScreen/>}/>
+          <Route exact path="/login" element={<LoginScreen/>}/>
           <Route exact path="/signout" element={<SignOutButton/>}/>
-          <Route exact path ="/login" element={<LoginScreen/>}/>
+          <Route exact path="/mainpage" element={<MainPage/>}/>
       </Routes>
       
     </div>
   );
 
-  /*
-  
-  */
 
   
 }
