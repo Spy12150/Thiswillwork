@@ -1,0 +1,10 @@
+.ReturnFromRebalanceButton {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-decoration-color: #fff;
+  }
+  .ReturnFromRebalanceButton:hover {
+    color: #6C63FF;
+  }
+  
