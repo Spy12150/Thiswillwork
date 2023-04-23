@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {Route, Routes, NavLink} from "react-router-dom"
 import "./LoginScreen.css"
-
+//gg + league sucks + ratio
 function LoginScreen(props) {
   return (
     <div className="LoginContainer">

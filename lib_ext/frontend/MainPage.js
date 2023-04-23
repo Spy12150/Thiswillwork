@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import {Button, Input, useBase, useRecords} from '@airtable/blocks/ui'
 import {NavLink} from "react-router-dom"
 
-
+//gg + league sucks + ratio
 function MainPage() {
   return (
     <div className="container">

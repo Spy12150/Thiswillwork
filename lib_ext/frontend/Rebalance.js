@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, useBase, useRecords } from '@airtable/blocks/ui';
 import {NavLink} from "react-router-dom"
 import "./Rebalance.css"
-
+//gg + league sucks + ratio
 
 function Rebalancer() {
 

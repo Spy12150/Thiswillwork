@@ -7,7 +7,6 @@ import InputOutput from "./Input.js"
 import MainPage from "./MainPage.js"
 import RemoveRecord from "./Remove.js"
 import Rebalancer from "./Rebalance.js"
-import "./App.css"
 //gg + league sucks + ratio
 function App(){
    

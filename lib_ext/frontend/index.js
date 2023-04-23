@@ -19,3 +19,4 @@ function HelloWorldApp() {
 }
 
 initializeBlock(() => <HelloWorldApp />);
+//gg + league sucks + ratio

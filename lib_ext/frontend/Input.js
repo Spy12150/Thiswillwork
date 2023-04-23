@@ -9,7 +9,7 @@ function InputOutput() {
   const [location, setLocation] = useState("");
   const [author, setAuthor] = useState("");
   const [genre, setGenre] = useState("");
-
+//gg + league sucks + ratio
   const base = useBase();
   const table = base.getTable("Test");
   const records = useRecords(table);

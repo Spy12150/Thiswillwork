@@ -9,5 +9,5 @@ const reportWebVitals = onPerfEntry => {
     });
   }
 };
-
+//gg + league sucks + ratio
 export default reportWebVitals;
