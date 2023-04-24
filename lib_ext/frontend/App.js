@@ -1,59 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
+import {Route, Routes} from "react-router-dom"
+import LoginScreen from "./LoginScreen.js"
+import SignOutButton from "./SignOutButton.js"
+import InputOutput from "./Input.js"
+import MainPage from "./MainPage.js"
+import RemoveRecord from "./Remove.js"
+import Rebalancer from "./Rebalance.js"
 
-function InputOutput() {
-  const [input1, setInput1] = useState("");
-  const [input2, setInput2] = useState("");
-  const [input3, setInput3] = useState("");
-
-  return(
+function App(){
+   
+ return (
     <div>
-      <div className="title">
-        <h1>Input Output Component</h1>
-      </div>
-      <div className="sign-out-button">
-        <button>Sign Out</button>
-      </div>
-      <div>
-        <label htmlFor="input1">Input 1:</label>
-        <input
-          id="input1"
-          type="text"
-          value={input1}
-          onChange={(e) => setInput1(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="input2">Input 2:</label>
-        <input
-          id="input2"
-          type="text"
-          value={input2}
-          onChange={(e) => setInput2(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="input3">Input 3:</label>
-        <input
-          id="input3"
-          type="text"
-          value={input3}
-          onChange={(e) => setInput3(e.target.value)}
-        />
-      </div>
-      <div>
-        <h3>Output 1:</h3>
-        <div>{input1}</div>
-      </div>
-      <div>
-        <h3>Output 2:</h3>
-        <div>{input2}</div>
-      </div>
-      <div>
-        <h3>Output 3:</h3>
-        <div>{input3}</div>
-      </div>
+      <Routes>
+          <Route exact path ="/" element={<LoginScreen/>}/>
+          <Route exact path="/login" element={<LoginScreen/>}/>
+          <Route exact path="/signout" element={<SignOutButton/>}/>
+          <Route exact path="/remove" element={<RemoveRecord/>} />
+          <Route exact path="/input" element={<InputOutput/>} />
+          <Route exact path="/mainpage" element={<MainPage/>}/>
+          <Route exact path="/rebalance" element={<Rebalancer/>}/>
+      </Routes>
+      
     </div>
   );
+
+
+  
 }
 
-export default InputOutput;
+export default App;
+
+
