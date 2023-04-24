@@ -21,12 +21,29 @@ function App(){
           <Route exact path="/rebalance" element={<Rebalancer/>}/>
       </Routes>
       
+      <Routes>
+          <Route exact path ="/" element={<LoginScreen/>}/>
+          <Route exact path="/login" element={<LoginScreen/>}/>
+          <Route exact path="/signout" element={<SignOutButton/>}/>
+          <Route exact path="/remove" element={<RemoveRecord/>} />
+          <Route exact path="/input" element={<InputOutput/>} />
+          <Route exact path="/mainpage" element={<MainPage/>}/>
+          <Route exact path="/rebalance" element={<Rebalancer/>}/>
+      </Routes>
+      
     </div>
   );
 
 
   
+
+
+  
 }
+
+export default App;
+
+
 
 export default App;
 
